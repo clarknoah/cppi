@@ -1,6 +1,6 @@
 function [eigen_variate] = eigen_returns(y)
-    
-    
+
+
     % compute regional response in terms of first eigenvariate
 	[m n]   = size(y);
 	if m > n
