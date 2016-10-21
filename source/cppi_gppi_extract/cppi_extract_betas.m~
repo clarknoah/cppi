@@ -1,8 +1,0 @@
-function [ output_args ] = cppi_extract_betas(ppi_matrix, eigen_vector)
-%CPPI_EXTRACT_BETAS This function takes in the inputs 
-%   Detailed explanation goes here
-
-    beta = inv(ppi_matrix.'*ppi_matrix)*ppi_matrix.'*voxel;
-
-end
-
