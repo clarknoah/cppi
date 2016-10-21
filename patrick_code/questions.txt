@@ -1,0 +1,4 @@
+surface_roi_extract questions
+    1: What is the purpose of this file?
+    2: Is this file responsible for selecting the brodmann area ROI?
+    3: Which files require conversion regardless of which ROIs?
