@@ -1,0 +1,7 @@
+function [sem] = cppi_sem(matrix)
+%CPPI_SEM Summary of this function goes here
+%   Detailed explanation goes here
+
+
+end
+
