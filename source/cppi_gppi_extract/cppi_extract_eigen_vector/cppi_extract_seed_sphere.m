@@ -4,7 +4,7 @@ function [seed_sphere] = cppi_extract_seed_sphere(coord, dim, Vmask, Vdata)
 %   coord: XYZ coordinate for seed voxel
 %   dim: Radius the sphere
 %   Vmask: SvR_GLM/mask.hdr
-$   Vdata: SPM.xY.VY
+%   Vdata: SPM.xY.VY
 
 
 X = zeros(Vmask.dim);
