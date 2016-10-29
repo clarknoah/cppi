@@ -56,7 +56,6 @@ do
   cp $FREESURFER_SUBJECT_ROOT${subject}/mri/brain.mgz $SUBS_ROOT${subject}_2/perm_test/brain.mgz
 
   mri_convert $SUBS_ROOT${subject}_2/perm_test/brain.mgz  $SUBS_ROOT${subject}_2/perm_test/brain.nii
-  
 
   cp $SUBS_ROOT${subject}_2/RER_Run1_01/aurRER_Run1_01.nii $SUBS_ROOT${subject}_2/perm_test/aurRER_Run1_01.nii
 done

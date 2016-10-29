@@ -5,7 +5,9 @@ function [task_design] = cppi_extract_task_design(SPM)
     design matrix.
 %}
 
-  %TODO  
+  %TODO
+  
+  task_design = SPM.xX.xKXs.X;
 
 end
 

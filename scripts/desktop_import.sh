@@ -65,7 +65,7 @@ rsync -avz -e 'ssh -p 43173'  --exclude '15*' --exclude '16*' --exclude '14*' \
 --exclude localizer/ \
 --exclude MB3_DWI_CMRR_mbep2d_V253_5B0_b4K_noIPAT_PA_LBOn_bipolar_AdvShim/ \
 --exclude RER_Run1/ \
---exclude RER_Run1_01/ \
+
 --exclude RER_Run2/ \
 --exclude RER_Run2_01/ \
 --exclude RER_Run3/ \
@@ -79,7 +79,6 @@ rsync -avz -e 'ssh -p 43173'  --exclude '15*' --exclude '16*' --exclude '14*' \
 --exclude RestingState/ \
 --exclude RestingState_01/ \
 --exclude Seq_v_Rand_Block/ \
---exclude Seq_v_Rand_Block_01/ \
 --exclude t1_mpr_sag_iso_2pat_9degflip_TI900/ \
 --exclude t2_spc_sag_p2_iso/ \
 --exclude TrufiSag/ \
