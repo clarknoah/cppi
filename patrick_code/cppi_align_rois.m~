@@ -1,3 +1,7 @@
+function [ output_args ] = cppi_align_rois( input_args )
+%CPPI_ALIGN_ROIS Summary of this function goes here
+%   Detailed explanation goes here
+
 %This script coregisters an roi that is extracted from the average surface in freesurfer to the subjects functoinal space using spm coregistration routines.
 %Since brain.nii may have been overwritten with new transformation, must run centralSulcAlignmentv2.sh prior to executing this script
 
@@ -177,3 +181,6 @@ for sub = subs;
     removeOverlap(roi1,roi2, intersectfn, outfn) %voxels are removed from first roi
   end
 end
+
+end
+

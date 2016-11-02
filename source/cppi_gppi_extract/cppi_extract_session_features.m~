@@ -1,4 +1,4 @@
-function [session] = cppi_extract_session_features(session_path,subs_dir,subject_name)
+function [session] = cppi_extract_session_features(session_path, subject)
 %CPPI_EXTRACT_SESSION_FEATURES Gets data for Cppi_Subject
 %   This function accepts the root path of a subject's folder and uses that
 %   to extract that various data points required for the Cppi_Subject
@@ -15,7 +15,7 @@ session.SPM = cppi_load([session_path 'SvR_GLM/SPM.mat'],'SPM');
 
 %Changing SPM path so that it matches which source of computer running code
 for x=1:length(session.SPM.xY.VY)
-session.SPM.xY.VY(x).fname = [session_path 'Seq_v_Rand_Block_01/scraurSeq_v_Rand_Block_01.nii'];
+session.SPM.xY.VY(x).fname = [session_path 'Seq_v_Rand_Block_01/scraurSeq_v_Rand_Block_01.nii']
 end
 
 %processed_rois =  cppi_align_roi_to_epi(rois);
@@ -27,7 +27,8 @@ cd([session_path 'perm_test/']);
 
 %Loading Variables required to create Seed Voxel
 hand_knob = load_untouch_nii([session_path 'perm_test/hand_knob_lh.nii']);
-preH = [subs_dir subject_name '_1/perm_test/' 'perm_searchlight_output_H_pre.img'];
+test_pre = '/Volumes/coax_lab/patrick_project/subjects/subjects/0006_1/';
+preH = [test_pre 'perm_test/' 'perm_searchlight_output_H_pre.img'];
 preH = load_untouch_nii(preH);
 
 [session.seed_timeseries, session.seed_xyz] = cppi_extract_seed_voxel( ...

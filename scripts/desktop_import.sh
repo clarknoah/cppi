@@ -36,7 +36,7 @@ rsync -avz -e 'ssh -p 43173'  --include='*.m' --include='*.sh' --prune-empty-dir
 
 
 #Sync code used by patrick  /data/r2d4/bin align_roi_to_LH & RH
-rsync -avz -e 'ssh -p 43173'  --include='align_rois_to_epi_LH.m' --include='align_rois_to_epi_RH.m' --include='align_rois_to_epi_LH_v1.m' --exclude='*' --prune-empty-dirs beukema2@mach.psy.cmu.edu:/data/r2d4/bin/  /Users/clarknoah/Development/Coax/Patrick_Project/patrick_code
+rsync -avz -e 'ssh -p 43173' --include='coregToEpi.m' --include='removeOverlap.m' --include='centralSulcAlignmentv2.sh' --include='centralSulcAlignmentv2.m'  --include='align_rois.m' --include='align_rois_to_epi_RH.m' --include='align_rois_to_epi_LH_v1.m' --exclude='*' --prune-empty-dirs beukema2@mach.psy.cmu.edu:/data/r2d4/bin/  /Users/clarknoah/Development/coax_lab/cppi/patrick_code
 
 ssh -p 43173 beukema2@mach.psy.cmu.edu
 

@@ -3,9 +3,14 @@ classdef Cppi_Tools
     %   Detailed explanation goes here
     
     properties
+        subjects;
     end
     
     methods
+        function obj = Cppi_Tools(subjects)
+        	obj.subjects = subjects;
+        end
+        
     end
     
 end

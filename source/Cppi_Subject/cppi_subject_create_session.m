@@ -5,15 +5,15 @@ function [session] = cppi_subject_create_session(session)
 
 
 session.task_design = cppi_extract_task_design(session.SPM);
-session.ppi_design = cppi_extract_task_design( ...
+session.ppi_design = cppi_extract_ppi_design( ...
                     session.task_design, ...
                     session.eigen);
 
-for roi=x:length(session.rois)
+for roi=1:length(session.rois)
     session.rois(roi).betas = struct('random',struct(),'sequence',struct());
-    betas = cppi_extract_betas(session.ppi_matrix, session.eigen);
+    betas = cppi_extract_betas(session.ppi_design, session.eigen);
     session.rois(roi).betas.raw =  betas;
-    session.rois(roi).betas.random.betas = betas(1,:);
+    session.rois(roi).betas.random.raw = betas(1,:);
     session.rois(roi).betas.random.sum = sum(betas(1,:));
     session.rois(roi).betas.random.mean = mean(betas(1,:));
     session.rois(roi).betas.random.std = std(betas(1,:));

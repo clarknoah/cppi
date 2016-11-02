@@ -25,7 +25,7 @@ classdef Cppi_Subject
           obj.beta_differences = cppi_subject_beta_analysis(obj.pre,obj.post);
         
       end
-        
+
     end
     
 end
