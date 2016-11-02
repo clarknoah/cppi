@@ -1,6 +1,6 @@
 function [seed_sphere] = cppi_extract_seed_sphere(coord, dim, Vmask, Vdata)
 %CPPI_EXTRACT_SEED_SPHERE Outputs 3D seed_voxel sphere for eigen vector generation
-%--- Variables ---
+% --- Arguments ---
 %   coord: XYZ coordinate for seed voxel
 %   dim: Radius the sphere
 %   Vmask: SvR_GLM/mask.hdr

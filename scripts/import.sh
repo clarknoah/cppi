@@ -37,3 +37,4 @@ rsync -avz -e 'ssh -p 43173'  --include='align_rois_to_epi_LH.m' --include='alig
 rsync -avz -e 'ssh -p 43173' --include='coregToEpi.m' --include='removeOverlap.m'  --include='align_rois.m' --include='align_rois_to_epi_RH.m' --include='align_rois_to_epi_LH_v1.m' --exclude='*' --prune-empty-dirs beukema2@mach.psy.cmu.edu:/data/r2d4/bin/  /Users/clarknoah/Development/Coax/Patrick_Project/patrick_code
 
 ssh -p 43173 beukema2@mach.psy.cmu.edu
+rsync -avz -e 'ssh -p 43173' --include='coregToEpi.m' --include='removeOverlap.m'  --include='align_rois.m' --include='align_rois_to_epi_RH.m' --include='align_rois_to_epi_LH_v1.m' --exclude='*' --prune-empty-dirs beukema2@mach.psy.cmu.edu:/data/gppi/bin/  /Users/clarknoah/Development/Coax/cppi/patrick_code
