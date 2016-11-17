@@ -1,12 +1,12 @@
 #!/bin/sh
-#sudo umount /home/clarknoah/coax_external/
-sudo mount -t hfsplus -o force,rw /dev/sdb2 /home/clarknoah/coax_external/
+#sudo umount /media/clarknoah/coax_lab
+#sudo mount -t hfsplus -o force,rw /dev/sdb2 /home/clarknoah/coax_external/
 export COAX_EXT="/home/clarknoah/coax_external/"
 SUBJECT_ROOT=$COAX_EXT"patrick_project/subjects/"
 FREESURFER_SUBJECT_ROOT=$COAX_EXT"patrick_project/freesurfer/subjects/"
 PAT_FREESURFER_SUBJECT_ROOT="/usr/local/freesurfer/subjects/"
 R2D4MEAN_LABEL=$FREESURFER_SUBJECT_ROOT"r2d4mean/label/"
-SUBS_ROOT=$COAX_EXT"patrick_project/subjects/subjects/"
+SUBS_ROOT=$COAX_EXTpatrick_project/subjects/subjects/
 
 
 export FREESURFER_HOME="/usr/local/freesurfer"
