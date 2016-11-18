@@ -23,6 +23,7 @@ for sub = subs;
 
     %load the volumetric rois that have been written by centralSulcAlignmentv2
     disp([sprintf('%s/hand_knob_%s.nii',in_roi_dir, char(hemi))]);
+
     hand_knob = load_untouch_nii(sprintf('%s/hand_knob_%s.nii',in_roi_dir, char(hemi)));
     BA4  = load_untouch_nii(sprintf('%s/%sBA4.nii', in_roi_dir, char(hemi)));
     BA123 = load_untouch_nii(sprintf('%s/%sBA123.nii', in_roi_dir, char(hemi)));
