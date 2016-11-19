@@ -3,8 +3,7 @@ function removeOverlap(roi1, roi2, intersectfn, outfn)
   clear matlabbatch
 
   spm_jobman('initcfg');
-  matlabbatch{1}.spm.util.imcalc.input = {roi1
-      roi2};
+  matlabbatch{1}.spm.util.imcalc.input = {m1 s1};
   matlabbatch{1}.spm.util.imcalc.output = intersectfn;
   matlabbatch{1}.spm.util.imcalc.outdir = {''};
   matlabbatch{1}.spm.util.imcalc.expression = 'i1 .* i2';

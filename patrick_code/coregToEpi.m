@@ -5,7 +5,7 @@ function coregToEpi(reference_image, source_image, varargin)
   spm_jobman('initcfg');
   matlabbatch{1}.spm.spatial.coreg.estwrite.ref = {reference_image};
   matlabbatch{1}.spm.spatial.coreg.estwrite.source = {source_image};
-  matlabbatch{1}.spm.spatial.coreg.estwrite.other = varargin;
+  matlabbatch{1}.spm.spatial.coreg.estwrite.other = varargin';
   matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.cost_fun = 'nmi';
   matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.sep = [4 2];
   matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.tol = [0.02 0.02 0.02 0.001 0.001 0.001 0.01 0.01 0.01 0.001 0.001 0.001];

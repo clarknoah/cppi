@@ -1,0 +1,23 @@
+function coords = cppi_grab_coords(region,max_buffer, min_buffer)
+%CPPI_GRAB_COORDS Summary of this function goes here
+%   Detailed explanation goes here
+
+%Grab the medial frontal gyrus crest coordinates
+    [x,y,z] = ind2sub(size(region.img), find(region.img(:)));
+    region = [x(1) y(1) z(1)];
+    z_coord = max(y); % z coordinate are at y position
+    z_max = z_coord + max_buffer; %2 cm above
+    z_min = z_coord + min_buffer; %2 cm below
+    x_coord = max(x);
+    x_max = x_coord + max_buffer; % 2 cm left
+    x_min = x_coord + min_buffer; % 2 cm right
+    coords = struct( ...
+        'z_coord',z_coord, ...
+        'x_coord',x_coord, ...
+        'z_max',z_max, ...
+        'z_min',z_min, ...
+        'x_max',x_max, ...
+        'x_min',x_min ...
+        );
+end
+
