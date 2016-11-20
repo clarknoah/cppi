@@ -1,8 +1,134 @@
 {
-  "labels":{
-    "BA123.nii":{
-      "path":"",
-      ""
+  "paths":{
+    "subjects_root":"/home/clarknoah/coax_external/patrick_project/subjects/subjects",
+    "freesurfer_root":"/home/clarknoah/coax_external/patrick_project/freesurfer/subjects",
+    "output_folder":"/home/clarknoah/Development/cppi/data",
+    "payload_path":"/home/clarknoah/Development/cppi/data"
+  },
+  "files":{
+    "brain":{
+      "hemi":false,
+      "function":"source",
+      "filename":"brain.nii",
+      "cropper":false,
+      "org_path":"%s/%s%s/perm_test/brain.nii",
+      "current_path":"%s/%s%s/perm_test/brain.nii"
+    },
+    "aurRER_Run1_01":{
+      "hemi":false,
+      "function":"source",
+      "filename":"aurRER_Run1_01.nii",
+      "org_path":"%s/%s%s/perm_test/aurRER_Run1_01.nii",
+      "current_path":"%s/%s%s/perm_test/aurRER_Run1_01.nii",
+      "cropper":false
+    },
+    "mfg_crest":{
+      "hemi":true,
+      "function":"seed",
+      "overlap_priority":null,
+      "cropper":false,
+
+      "lh":{
+        "obj":null,
+        "filename":"mfg_crest_lh.nii",
+        "org_path":"%s/%s%s/perm_test/mfg_crest_lh.nii",
+        "current_path":"%s/%s%s/perm_test/mfg_crest_lh.nii",
+        "cropped_path":"%s/%s%s/rois/mfg_crest_lh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "obj":null,
+        "filename":"mfg_crest_rh.nii",
+        "org_path":"%s/%s%s/perm_test/mfg_crest_rh.nii",
+        "current_path":"%s/%s%s/perm_test/mfg_crest_rh.nii",
+        "cropped_path":"%s/%s%s/rois/mfg_crest_rh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    },
+    "hand_knob":{
+      "hemi":true,
+      "cropper":true,
+      "function":"seed",
+      "overlap_priority":null,
+
+      "lh":{
+        "obj":null,
+        "filename":"hand_knob_lh.nii",
+        "org_path":"%s/%s%s/perm_test/hand_knob_lh.nii",
+        "current_path":"%s/%s%s/perm_test/hand_knob_lh.nii",
+        "cropped_path":"%s/%s%s/rois/hand_knob_lh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "obj":null,
+        "filename":"hand_knob_rh.nii",
+        "org_path":"%s/%s%s/perm_test/hand_knob_rh.nii",
+        "current_path":"%s/%s%s/perm_test/hand_knob_rh.nii",
+        "cropped_path":"%s/%s%s/rois/hand_knob_rh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    },
+    "s1":{
+      "hemi":true,
+      "function":"roi",
+      "overlap_priority":2,
+      "cropper":false,
+
+      "lh":{
+        "name":"Primary Somatosensory Cortex (lh)",
+        "obj":null,
+        "filename":"lhBA123.nii",
+        "org_path":"%s/%s%s/perm_test/lhBA123.nii",
+        "current_path":"%s/%s%s/perm_test/lhBA123.nii",
+        "cropped_path":"%s/%s%s/rois/lhBA123_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "name":"Primary Somatosensory Cortex (rh)",
+        "obj":null,
+        "filename":"rhBA123.nii",
+        "org_path":"%s/%s%s/perm_test/rhBA123.nii",
+        "current_path":"%s/%s%s/perm_test/rhBA123.nii",
+        "cropped_path":"%s/%s%s/rois/rhBA123_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    },
+    "m1":{
+      "hemi":true,
+      "function":"roi",
+      "overlap_priority":1,
+      "cropper":false,
+
+      "lh":{
+        "name":"Primary Motor Cortex (lh)",
+        "obj":null,
+        "filename":"lhBA4.nii",
+        "org_path":"%s/%s%s/perm_test/lhBA4.nii",
+        "current_path":"%s/%s%s/perm_test/lhBA4.nii",
+        "cropped_path":"%s/%s%s/rois/lhBA4_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "name":"Primary Motor Cortex (rh)",
+        "obj":null,
+        "filename":"rhBA4.nii",
+        "org_path":"%s/%s%s/perm_test/rhBA4.nii",
+        "current_path":"%s/%s%s/perm_test/rhBA4.nii",
+        "cropped_path":"%s/%s%s/rois/rhBA4_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
     }
   }
 }

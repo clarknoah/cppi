@@ -2,5 +2,80 @@
   "paths":{
     "subjects_root":"/home/clarknoah/coax_external/patrick_project/subjects/subjects",
     "freesurfer_root":"/home/clarknoah/coax_external/patrick_project/freesurfer/subjects"
-  }
+  },
+  "subjects":[
+			{
+				"name": "0006",
+				"group": "sequence"
+			},
+			{
+				"name": "0012",
+				"group": "sequence"
+			},
+			{
+				"name": "0192",
+				"group": "sequence"
+			},
+			{
+				"name": "0273",
+				"group": "sequence"
+			},
+			{
+				"name": "0490",
+				"group": "sequence"
+			},
+			{
+				"name": "0491",
+				"group": "sequence"
+			},
+			{
+				"name": "0557",
+				"group": "sequence"
+			},
+			{
+				"name": "0558",
+				"group": "sequence"
+			},
+			{
+				"name": "0559",
+				"group": "sequence"
+			},
+			{
+				"name": "0269",
+				"group": "control"
+			},
+			{
+				"name": "0494",
+				"group": "control"
+			},
+			{
+				"name": "0495",
+				"group": "control"
+			},
+			{
+				"name": "0549",
+				"group": "control"
+			},
+			{
+				"name": "0550",
+				"group": "control"
+			},
+			{
+				"name": "0604",
+				"group": "control"
+			},
+			{
+				"name": "0605",
+				"group": "control"
+			},
+			{
+				"name": "0464",
+				"group": "control"
+			},
+			{
+				"name": "0627",
+				"group": "control"
+			}
+		],
+  "sessions":["_1","_2"]
 }
