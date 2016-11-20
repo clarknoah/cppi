@@ -38,12 +38,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 96,
-					"x_coord": 165,
-					"z_max": 116,
-					"z_min": 76,
-					"x_max": 185,
-					"x_min": 145
+					"z_coord": 99,
+					"x_coord": 156,
+					"z_max": 119,
+					"z_min": 79,
+					"x_max": 176,
+					"x_min": 136
 				}
 			},
 			"rh": {
@@ -55,12 +55,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 97,
-					"x_coord": 87,
-					"z_max": 117,
-					"z_min": 77,
-					"x_max": 107,
-					"x_min": 67
+					"z_coord": 95,
+					"x_coord": 95,
+					"z_max": 115,
+					"z_min": 75,
+					"x_max": 115,
+					"x_min": 75
 				}
 			}
 		},
@@ -78,12 +78,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 101,
-					"x_coord": 159,
-					"z_max": 121,
-					"z_min": 81,
-					"x_max": 179,
-					"x_min": 139
+					"z_coord": 111,
+					"x_coord": 162,
+					"z_max": 131,
+					"z_min": 91,
+					"x_max": 182,
+					"x_min": 142
 				}
 			},
 			"rh": {
@@ -96,11 +96,11 @@
 				"c_max": null,
 				"coord": {
 					"z_coord": 107,
-					"x_coord": 96,
+					"x_coord": 99,
 					"z_max": 127,
 					"z_min": 87,
-					"x_max": 116,
-					"x_min": 76
+					"x_max": 119,
+					"x_min": 79
 				}
 			}
 		},
