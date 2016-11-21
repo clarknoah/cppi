@@ -60,7 +60,31 @@ classdef Cppi_Manipulator
             end
             savejson('',payload,[path '/' name]);
         end
-        function rois=extract_rois(obj,subject,session)
+        
+        function seeds = retrieve_seeds(obj,subject,session)
+            seeds = [];
+             fields=fieldnames(obj.payload.files);
+            for x=1:length(fields)
+                file = obj.payload.files.(char(fields(x)));
+                if(obj.payload.files.(char(fields(x))).hemi==true&& ...
+                       strcmp(obj.payload.files.(char(fields(x))).function,'seed'))
+                   seed_lh = file.lh;
+                   seed_lh.hemi = 'lh';
+                   seed_lh.path = obj.parse_session_path(seed_lh.current_path,subject,session);
+                   seed_lh.obj = obj.load_session_file(seed_lh.current_path,subject,session);
+                   seed_lh.searchlight_obj = obj.load_session_file(seed_lh.searchlight_path,subject,session);
+                   
+                   seed_rh = file.rh;
+                   seed_rh.hemi = 'rh';
+                   seed_rh.path = obj.parse_session_path(seed_rh.current_path,subject,session);
+                   seed_rh.obj = obj.load_session_file(seed_rh.current_path,subject,session);
+                   seed_rh.searchlight_obj = obj.load_session_file(seed_rh.searchlight_path,subject,session);
+                   seeds = [seeds,seed_lh,seed_rh];
+                end
+            end 
+        end
+        
+        function rois=retrieve_rois(obj,subject,session)
             rois = [];
              fields=fieldnames(obj.payload.files);
             for x=1:length(fields)
@@ -75,6 +99,14 @@ classdef Cppi_Manipulator
                    rois = [rois,roi_lh,roi_rh];
                 end
             end
+        end
+        function name=generate_overlap_name(obj,region1, region2,prefix,suffix,output_path,subject,session)
+            region1 = strsplit(region1,'.');
+            region1 = strsplit(region2,'.');
+            region1 = region1{1};
+            region2 = region1{1};
+            name = [prefix region1 '_' region2 suffix];
+            finpath = parse_session_path(path,subject,session)
         end
         %function matching_terms = query_files(obj,query)
         %    fields = fieldnames(obj.payload);

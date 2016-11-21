@@ -28,3 +28,4 @@ pre_session = cppi_extract_session_features(test_sub_dir_1);
 post_session = cppi_extract_session_features(test_sub_dir_2);
 
 cd(current_dir);
+

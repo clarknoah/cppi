@@ -31,36 +31,42 @@
 			"cropper": 0,
 			"lh": {
 				"obj": null,
+				"searchlight_obj": null,
+				"name": "MFG Crest (lh)",
 				"filename": "mfg_crest_lh.nii",
+				"searchlight_path": "%s\/%s%s\/perm_test\/perm_searchlight_output_H_pre.img",
 				"org_path": "%s\/%s%s\/perm_test\/mfg_crest_lh.nii",
 				"current_path": "%s\/%s%s\/perm_test\/mfg_crest_lh.nii",
 				"cropped_path": "%s\/%s%s\/rois\/mfg_crest_lh_cropped.nii",
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 99,
-					"x_coord": 156,
-					"z_max": 119,
-					"z_min": 79,
-					"x_max": 176,
-					"x_min": 136
+					"z_coord": 96,
+					"x_coord": 165,
+					"z_max": 116,
+					"z_min": 76,
+					"x_max": 185,
+					"x_min": 145
 				}
 			},
 			"rh": {
 				"obj": null,
+				"searchlight_obj": null,
+				"name": "MFG Crest (rh)",
 				"filename": "mfg_crest_rh.nii",
+				"searchlight_path": "%s\/%s%s\/perm_test\/perm_searchlight_output_H_pre.img",
 				"org_path": "%s\/%s%s\/perm_test\/mfg_crest_rh.nii",
 				"current_path": "%s\/%s%s\/perm_test\/mfg_crest_rh.nii",
 				"cropped_path": "%s\/%s%s\/rois\/mfg_crest_rh_cropped.nii",
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 95,
-					"x_coord": 95,
-					"z_max": 115,
-					"z_min": 75,
-					"x_max": 115,
-					"x_min": 75
+					"z_coord": 97,
+					"x_coord": 87,
+					"z_max": 117,
+					"z_min": 77,
+					"x_max": 107,
+					"x_min": 67
 				}
 			}
 		},
@@ -71,36 +77,42 @@
 			"overlap_priority": null,
 			"lh": {
 				"obj": null,
+				"searchlight_obj": null,
+				"name": "Hand Knob (lh)",
 				"filename": "hand_knob_lh.nii",
+				"searchlight_path": "%s\/%s%s\/perm_test\/perm_searchlight_output_H_pre.img",
 				"org_path": "%s\/%s%s\/perm_test\/hand_knob_lh.nii",
 				"current_path": "%s\/%s%s\/perm_test\/hand_knob_lh.nii",
 				"cropped_path": "%s\/%s%s\/rois\/hand_knob_lh_cropped.nii",
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 111,
-					"x_coord": 162,
-					"z_max": 131,
-					"z_min": 91,
-					"x_max": 182,
-					"x_min": 142
+					"z_coord": 101,
+					"x_coord": 159,
+					"z_max": 121,
+					"z_min": 81,
+					"x_max": 179,
+					"x_min": 139
 				}
 			},
 			"rh": {
 				"obj": null,
+				"searchlight_obj": null,
+				"name": "Hand Knob (rh)",
 				"filename": "hand_knob_rh.nii",
 				"org_path": "%s\/%s%s\/perm_test\/hand_knob_rh.nii",
+				"searchlight_path": "%s\/%s%s\/perm_test\/perm_searchlight_output_H_pre.img",
 				"current_path": "%s\/%s%s\/perm_test\/hand_knob_rh.nii",
 				"cropped_path": "%s\/%s%s\/rois\/hand_knob_rh_cropped.nii",
 				"c_min": null,
 				"c_max": null,
 				"coord": {
 					"z_coord": 107,
-					"x_coord": 99,
+					"x_coord": 96,
 					"z_max": 127,
 					"z_min": 87,
-					"x_max": 119,
-					"x_min": 79
+					"x_max": 116,
+					"x_min": 76
 				}
 			}
 		},
@@ -114,7 +126,7 @@
 				"obj": null,
 				"filename": "lhBA123.nii",
 				"org_path": "%s\/%s%s\/perm_test\/lhBA123.nii",
-				"current_path": "%s\/%s%s\/rois\/lhBA123_cropped.nii",
+				"current_path": "%s\/%s%s\/rois\/r_lhBA123_cropped.nii",
 				"cropped_path": "%s\/%s%s\/rois\/lhBA123_cropped.nii",
 				"c_min": null,
 				"c_max": null
@@ -124,7 +136,7 @@
 				"obj": null,
 				"filename": "rhBA123.nii",
 				"org_path": "%s\/%s%s\/perm_test\/rhBA123.nii",
-				"current_path": "%s\/%s%s\/rois\/rhBA123_cropped.nii",
+				"current_path": "%s\/%s%s\/rois\/r_rhBA123_cropped.nii",
 				"cropped_path": "%s\/%s%s\/rois\/rhBA123_cropped.nii",
 				"c_min": null,
 				"c_max": null
@@ -140,7 +152,7 @@
 				"obj": null,
 				"filename": "lhBA4.nii",
 				"org_path": "%s\/%s%s\/perm_test\/lhBA4.nii",
-				"current_path": "%s\/%s%s\/rois\/lhBA4_cropped.nii",
+				"current_path": "%s\/%s%s\/rois\/r_lhBA4_cropped.nii",
 				"cropped_path": "%s\/%s%s\/rois\/lhBA4_cropped.nii",
 				"c_min": null,
 				"c_max": null
@@ -150,7 +162,7 @@
 				"obj": null,
 				"filename": "rhBA4.nii",
 				"org_path": "%s\/%s%s\/perm_test\/rhBA4.nii",
-				"current_path": "%s\/%s%s\/rois\/rhBA4_cropped.nii",
+				"current_path": "%s\/%s%s\/rois\/r_rhBA4_cropped.nii",
 				"cropped_path": "%s\/%s%s\/rois\/rhBA4_cropped.nii",
 				"c_min": null,
 				"c_max": null

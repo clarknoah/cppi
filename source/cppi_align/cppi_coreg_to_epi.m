@@ -15,5 +15,6 @@ function [ output_args ] = cppi_coreg_to_epi(reference_image, source_image, roi_
   matlabbatch{1}.spm.spatial.coreg.estwrite.roptions.mask = 0;
   matlabbatch{1}.spm.spatial.coreg.estwrite.roptions.prefix = 'r_';
   spm_jobman('run', matlabbatch);
+  
 end
 

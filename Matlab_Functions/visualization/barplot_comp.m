@@ -1,9 +1,9 @@
-function [ output_args ] = barplot_comp(barplot_m1,barplot_s1)
+function [ output_args ] = barplot_comp(funplot,funplot_std)
 %BARPLOT_COMP Summary of this function goes here
 %   Detailed explanation goes here
 
- funplot = [barplot_m1.seq;barplot_m1.ran;barplot_s1.seq;barplot_s1.ran];
-funplot_std=[barplot_m1.seq_std,barplot_m1.ran_std,barplot_s1.seq_std,barplot_s1.ran_std];
+% funplot = [barplot_m1.seq;barplot_m1.ran;barplot_s1.seq;barplot_s1.ran];
+%funplot_std=[barplot_m1.seq_std,barplot_m1.ran_std,barplot_s1.seq_std,barplot_s1.ran_std];
  
     
  figure
@@ -17,7 +17,7 @@ h = bar(funplot);
  %set(gca,'XTickLabels',{'Control-Pre', 'Sequence-Pre', 'Control-Post', 'Sequence-Post'});
  set(gca,'XTickLabels',{'M1-Sequence|M1-Random|S1-Sequence|S1-Random'});
  %title('Sequence Data (M1 and S1 PPI correlation)');
- h(1).FaceColor = [0.501 0.0 0.0];
+h(1).FaceColor = [0.501 0.0 0.0];
 h(2).FaceColor = [0 0 0.8039];
 h(3).FaceColor = [1 0.388 0.278];
 h(4).FaceColor = [0 0.749 1];

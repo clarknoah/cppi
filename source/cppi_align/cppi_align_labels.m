@@ -15,7 +15,7 @@ function [cppi] = cppi_align_labels(config,payload,subject,session)
     [cppi,payload] = cppi_align_bulk_crop(cppi,payload,subject,session);
     
     cppi = Cppi_Manipulator(config,payload);
-    
+     cppi_align_bulk_overlap(cppi,payload,subject,session);
     %coreg ROIs to EPI
     [cppi,payload] = cppi_align_bulk_coreg(cppi,payload,subject,session);
     

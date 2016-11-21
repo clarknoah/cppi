@@ -6,39 +6,39 @@
   "subjects":[
 			{
 				"name": "0006",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0012",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0192",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0273",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0490",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0491",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0557",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0558",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0559",
-				"group": "sequence"
+				"group": "training"
 			},
 			{
 				"name": "0269",
@@ -77,5 +77,6 @@
 				"group": "control"
 			}
 		],
+
   "sessions":["_1","_2"]
 }

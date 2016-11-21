@@ -1,0 +1,2 @@
+[mean,prop] = tools.extract_group_betas('sequence','MFG Crest (lh)','Primary Somatosensory Cortex (lh)','random');
+[betas,sem] = tools.extract_roi_beta_comparison('Primary Motor Cortex (lh)','Primary Somatosensory Cortex (lh)','Hand Knob (lh)');

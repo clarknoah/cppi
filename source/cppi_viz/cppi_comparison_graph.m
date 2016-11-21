@@ -1,4 +1,5 @@
-
+function [difference] = cppi_comparison_graph(betas,sem)
+%CPPI_GENERATE_DIFFERENCE Returns the difference of two values
 m1_differences = betas(:,1).';
 m1_sem = sem(:,1).';
 s1_differences = betas(:,2).';
@@ -19,7 +20,7 @@ set(gca,'XTicklabel',xTicker);
 set(get(gca,'YLabel'),'String',yTicker);
 set(gca,'XTickLabelRotation',45);
 title({'M1: Mean Value of the Post minus Pre Difference','(With SEM)'});
- 
+
 subplot(1,2,2);
 sb = bar(s1_differences,'g');
 hold;
@@ -30,7 +31,7 @@ title({'S1: Mean Value of the Post minus Pre Difference','(With SEM)'});
 
 
 figure;
-lKey = xTicker; 
+lKey = xTicker;
 xticker = 'M1 - S1';
 bTitle = {'Mean Value of the Post minus Pre ROI Differences','(With SEM)'};
 h = group_error_bar([m1_differences;s1_differences] ...
@@ -39,3 +40,4 @@ set(gca,'XTicklabel',{'M1 ROI','S1 ROI'})
 h(1).FaceColor = 'g';
 lh = legend(lKey);
 set(lh,'Location','BestOutside','Orientation','horizontal');
+end

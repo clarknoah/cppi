@@ -30,7 +30,10 @@
 
       "lh":{
         "obj":null,
+        "searchlight_obj":null,
+        "name":"MFG Crest (lh)",
         "filename":"mfg_crest_lh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
         "org_path":"%s/%s%s/perm_test/mfg_crest_lh.nii",
         "current_path":"%s/%s%s/perm_test/mfg_crest_lh.nii",
         "cropped_path":"%s/%s%s/rois/mfg_crest_lh_cropped.nii",
@@ -40,7 +43,10 @@
       },
       "rh":{
         "obj":null,
+        "searchlight_obj":null,
+        "name":"MFG Crest (rh)",
         "filename":"mfg_crest_rh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
         "org_path":"%s/%s%s/perm_test/mfg_crest_rh.nii",
         "current_path":"%s/%s%s/perm_test/mfg_crest_rh.nii",
         "cropped_path":"%s/%s%s/rois/mfg_crest_rh_cropped.nii",
@@ -56,7 +62,10 @@
 
       "lh":{
         "obj":null,
+        "searchlight_obj":null,
+        "name":"Hand Knob (lh)",
         "filename":"hand_knob_lh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
         "org_path":"%s/%s%s/perm_test/hand_knob_lh.nii",
         "current_path":"%s/%s%s/perm_test/hand_knob_lh.nii",
         "cropped_path":"%s/%s%s/rois/hand_knob_lh_cropped.nii",
@@ -66,8 +75,11 @@
       },
       "rh":{
         "obj":null,
+        "searchlight_obj":null,
+        "name":"Hand Knob (rh)",
         "filename":"hand_knob_rh.nii",
         "org_path":"%s/%s%s/perm_test/hand_knob_rh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
         "current_path":"%s/%s%s/perm_test/hand_knob_rh.nii",
         "cropped_path":"%s/%s%s/rois/hand_knob_rh_cropped.nii",
         "c_min":null,
