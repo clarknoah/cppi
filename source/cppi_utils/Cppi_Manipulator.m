@@ -30,6 +30,14 @@ classdef Cppi_Manipulator
             xyz = [x(:)';y(:)';z(:)'];
             xyz= xyz';
         end
+        function q_overlap_only(obj,xyz1,xyz2)
+            figure;
+            xyz1 = obj.get_mask_xyz(xyz1);
+            xyz2 = obj.get_mask_xyz(xyz2);
+            scatter3(xyz1(:,1),xyz1(:,2),xyz1(:,3),'red','filled');
+            hold;
+            scatter3(xyz2(:,1),xyz2(:,2),xyz2(:,3),'blue','filled');
+        end
         function display_overlap(obj,xyz1,xyz2)
             figure;
             subplot(1,3,1)
@@ -46,6 +54,11 @@ classdef Cppi_Manipulator
         end
         function display_scatter(obj,xyz1)
             scatter3(xyz1(:,1),xyz1(:,2),xyz1(:,3),'red','filled')
+        end
+        function quick_display_overlap(obj, xyz1,xyz2)
+            xyz1 = obj.get_mask_xyz(xyz1);
+            xyz2 = obj.get_mask_xyz(xyz2);
+            obj.display_overlap(xyz1,xyz2);
         end
         function payload=save_json(obj,path,name)
             payload = obj.payload;

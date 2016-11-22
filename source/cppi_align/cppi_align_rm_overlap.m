@@ -14,7 +14,7 @@ function [ output_args ] = cppi_align_rm_overlap(roi1, roi2, intersectfn, outfn)
   matlabbatch{1}.spm.util.imcalc.options.dtype = 4;
   spm_jobman('run', matlabbatch);
   %delete intersecting voxels
-  overlap = load_untouch_nii(outfn);
+  overlap = load_untouch_nii(intersectfn);
   roi1 = load_untouch_nii(roi1);
   roi1.img(find(overlap.img(:))) = 0;
   save_untouch_nii(roi1,outfn);

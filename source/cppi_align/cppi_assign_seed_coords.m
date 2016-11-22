@@ -18,4 +18,3 @@ function [payload] = cppi_assign_seed_coords(payload)
     end
 
 end
-

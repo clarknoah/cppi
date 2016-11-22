@@ -86,3 +86,16 @@ beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /Volumes/coax_lab/patrick_project/
 
 rsync -avz -e 'ssh -p 43173' \
 beukema2@mach.psy.cmu.edu:/usr/local/freesurfer/subjects /Volumes/coax_lab/patrick_project/freesurfer/subjects
+
+
+rsync -avz -e 'ssh -p 43173' --include='aurRER_Run1_01.nii'/ \
+ --include='lhBA123.nii' \
+ --exclude '*' \
+beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /home/clarknoah/coax_external/patrick_project/subjects/subjects
+
+rsync -avz -e 'ssh -p 43173' --include='*/' --include='aurRER_Run1_01.nii' \
+--include='r_lhBA123_cropped.nii' \
+--exclude='*' \
+--prune-empty-dirs \
+beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /home/clarknoah/coax_external/test
+

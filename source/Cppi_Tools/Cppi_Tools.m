@@ -39,8 +39,12 @@ classdef Cppi_Tools
         
         function [avg_beta]=average_beta_and_sem(obj,betas)
             avg_beta = [];
+            if(length(betas)==0)
+                avg_beta=[0,0];
+            else
             avg_beta(1) = mean(betas(:,1));
             avg_beta(2) = mean(betas(:,2));
+            end
         end
         function roi=extract_roi_mean_betas(obj,roi1,seed)
         roi = struct();
