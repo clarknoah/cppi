@@ -65,7 +65,6 @@ rsync -avz -e 'ssh -p 43173'  --exclude '15*' --exclude '16*' --exclude '14*' \
 --exclude localizer/ \
 --exclude MB3_DWI_CMRR_mbep2d_V253_5B0_b4K_noIPAT_PA_LBOn_bipolar_AdvShim/ \
 --exclude RER_Run1/ \
-
 --exclude RER_Run2/ \
 --exclude RER_Run2_01/ \
 --exclude RER_Run3/ \
@@ -82,7 +81,7 @@ rsync -avz -e 'ssh -p 43173'  --exclude '15*' --exclude '16*' --exclude '14*' \
 --exclude t1_mpr_sag_iso_2pat_9degflip_TI900/ \
 --exclude t2_spc_sag_p2_iso/ \
 --exclude TrufiSag/ \
-beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /Volumes/coax_lab/patrick_project/subjects
+beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /home/clarknoah/coax_external/patrick_project/subjects
 
 rsync -avz -e 'ssh -p 43173' \
 beukema2@mach.psy.cmu.edu:/usr/local/freesurfer/subjects /Volumes/coax_lab/patrick_project/freesurfer/subjects
@@ -96,6 +95,6 @@ beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /home/clarknoah/coax_external/patr
 rsync -avz -e 'ssh -p 43173' --include='*/' --include='aurRER_Run1_01.nii' \
 --include='r_lhBA123_cropped.nii' \
 --exclude='*' \
---prune-empty-dirs \
+--prune-empty-dirs --no-perms \
 beukema2@mach.psy.cmu.edu:/data/r2d4/subjects /home/clarknoah/coax_external/test
 
