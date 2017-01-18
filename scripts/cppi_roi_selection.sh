@@ -1,14 +1,14 @@
 #!/bin/sh
-sudo umount /home/clarknoah/coax_external/
-sudo mount -t hfsplus -o force,rw /dev/sda2 /home/clarknoah/coax_external/
-export COAX_EXT="/home/clarknoah/coax_external"
+sudo umount /home/noah/coax_external/
+sudo mount -t hfsplus -o force,rw /dev/sda2 /home/noah/coax_external/
+export COAX_EXT="/home/noah/coax_external"
 SUBJECT_ROOT=$COAX_EXT/patrick_project/subjects
 export FREESURFER_SUBJECT_ROOT=$COAX_EXT/patrick_project/freesurfer/subjects
 PAT_FREESURFER_SUBJECT_ROOT="/usr/local/freesurfer/subjects"
 R2D4MEAN_LABEL=$FREESURFER_SUBJECT_ROOT/r2d4mean/label
 SUBS_ROOT=$COAX_EXT/patrick_project/subjects/subjects
 
-export COAX_EXT="/home/clarknoah/coax_external"
+export COAX_EXT="/home/noah/coax_external"
 export FREESURFER_HOME="/usr/local/freesurfer"
 export SUBJECTS_DIR=$COAX_EXT/patrick_project/freesurfer/subjects
 source $FREESURFER_HOME/SetUpFreeSurfer.sh

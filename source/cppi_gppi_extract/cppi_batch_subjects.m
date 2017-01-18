@@ -18,6 +18,11 @@ function [cppi_tools] = cppi_batch_subjects(config,payload)
 %
 %    output_name:   Name of the folder you want your cppi subjects to go in
 
+    %TODO: Use the config file to automate pre/post sessions. Basically
+    % turn the for x=1:length(subjects) into a function that outputs
+    % directly to Cppi_Subject, and reads the config file to do so
+    
+    
     %mkdir(subs_root_dir,'ccpi_subjects');
     subjects_array = [];
     session_pre = '_1';

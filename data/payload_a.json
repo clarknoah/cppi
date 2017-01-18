@@ -1,9 +1,9 @@
 {
 	"paths": {
-		"subjects_root": "\/home\/clarknoah\/coax_external\/patrick_project\/subjects\/subjects",
-		"freesurfer_root": "\/home\/clarknoah\/coax_external\/patrick_project\/freesurfer\/subjects",
-		"output_folder": "\/home\/clarknoah\/Development\/cppi\/data",
-		"payload_path": "\/home\/clarknoah\/Development\/cppi\/data"
+		"subjects_root": "\/home\/noah\/coax_external\/patrick_project\/subjects\/subjects",
+		"freesurfer_root": "\/home\/noah\/coax_external\/patrick_project\/freesurfer\/subjects",
+		"output_folder": "\/home\/noah\/Development\/cppi\/data",
+		"payload_path": "\/home\/noah\/Development\/cppi\/data"
 	},
 	"files": {
 		"brain": {
@@ -41,12 +41,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 96,
-					"x_coord": 165,
-					"z_max": 116,
-					"z_min": 76,
-					"x_max": 185,
-					"x_min": 145
+					"z_coord": 94,
+					"x_coord": 156,
+					"z_max": 114,
+					"z_min": 74,
+					"x_max": 176,
+					"x_min": 136
 				}
 			},
 			"rh": {
@@ -61,12 +61,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 97,
-					"x_coord": 87,
-					"z_max": 117,
-					"z_min": 77,
-					"x_max": 107,
-					"x_min": 67
+					"z_coord": 107,
+					"x_coord": 92,
+					"z_max": 127,
+					"z_min": 87,
+					"x_max": 112,
+					"x_min": 72
 				}
 			}
 		},
@@ -87,12 +87,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 101,
-					"x_coord": 159,
-					"z_max": 121,
-					"z_min": 81,
-					"x_max": 179,
-					"x_min": 139
+					"z_coord": 108,
+					"x_coord": 163,
+					"z_max": 128,
+					"z_min": 88,
+					"x_max": 183,
+					"x_min": 143
 				}
 			},
 			"rh": {
@@ -107,10 +107,10 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 107,
+					"z_coord": 112,
 					"x_coord": 96,
-					"z_max": 127,
-					"z_min": 87,
+					"z_max": 132,
+					"z_min": 92,
 					"x_max": 116,
 					"x_min": 76
 				}

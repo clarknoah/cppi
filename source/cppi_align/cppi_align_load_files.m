@@ -1,6 +1,11 @@
 function [payload] = cppi_align_load_files(cppi,payload,subject,session)
-%CPPI_ALIGN_LOAD_FILES Summary of this function goes here
-%   Detailed explanation goes here
+%CPPI_ALIGN_LOAD_FILES Loads nii files into payload object
+%   Function iterates through payload object and loads paths as nii files
+%   so they can be maniplated
+
+%TODO: Determine if there is a more effective way of doing this, as the
+%payload file becomes very large and it requires the files to be pass
+%around matlab while still in memory, somewhat messy. 
     fields = fieldnames(payload.files);
     for x=1:length(fields)
         file = payload.files.(char(fields(x)));

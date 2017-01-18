@@ -21,11 +21,16 @@ end
 %processed_rois =  cppi_align_roi_to_epi(rois);
 %m1 = struct('name','Primary Motor Cortex','path',[session_path 'rois/r_lhBA4_cropped.nii']);
 %s1 = struct('name','Primary Somatosensory Cortex','path',[session_path,'rois/r_lhBA123_cropped.nii']);
+
+    %Pipeline evaluates if it has received the first or second session, if
+    %the session is the first one, then it will go through the
+    %cppi_align_labels function in order to determine whether or 
 if(strcmp(session_point,'_1'))
+    
     cppi = cppi_align_labels(config,payload,subject_name,session_point);
     
     payload = cppi.payload;
-    %payload = loadjson('/home/clarknoah/Development/cppi/data/payload_a.json');
+    %payload = loadjson('/home/noah/Development/cppi/data/payload_a.json');
     %cppi = Cppi_Manipulator(config,payload);
     
     processed_rois = cppi.retrieve_rois(subject_name,session_point);

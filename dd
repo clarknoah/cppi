@@ -1,9 +1,9 @@
 {
 	"paths": {
-		"subjects_root": "\/home\/clarknoah\/coax_external\/patrick_project\/subjects\/subjects",
-		"freesurfer_root": "\/home\/clarknoah\/coax_external\/patrick_project\/freesurfer\/subjects",
-		"output_folder": "\/home\/clarknoah\/Development\/cppi\/data",
-		"payload_path": "\/home\/clarknoah\/Development\/cppi\/data"
+		"subjects_root": "\/home\/noah\/coax_external\/patrick_project\/subjects\/subjects",
+		"freesurfer_root": "\/home\/noah\/coax_external\/patrick_project\/freesurfer\/subjects",
+		"output_folder": "\/home\/noah\/Development\/cppi\/data",
+		"payload_path": "\/home\/noah\/Development\/cppi\/data"
 	},
 	"files": {
 		"brain": {
