@@ -1,5 +1,8 @@
 function result = cppi_mtx_compare(mtx1,mtx2)
-%MTX_COMPARE Summary of this function goes here
+%MTX_COMPARE Function compares two matricies to see if they are equal
+%   Output is an array with a value for each dimension comparison, 1 =
+%   match, 0 = not the same.
+%   output: [];
 %   Detailed explanation goes here
 
 %compare size of matrix
@@ -33,5 +36,6 @@ else
     mtx_equivalence_result = 0;   
 end
 result = [mtx_equivalence_result, size_equivalence_result, dim_equivalence_result];
+disp(result);
 end
 

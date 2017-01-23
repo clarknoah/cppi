@@ -11,11 +11,11 @@ function [session,payload] = cppi_extract_session_features(session_path,subs_dir
 disp('********************');
 disp(['Starting ' subject_name ' session ' session_point]);
 session = struct();
-session.SPM = cppi_load([session_path 'SvR_GLM/SPM.mat'],'SPM');
+session.SPM = cppi_load([session_path config.relative_paths.subject_spm],'SPM');
 
 %Changing SPM path so that it matches which source of computer running code
 for x=1:length(session.SPM.xY.VY)
-session.SPM.xY.VY(x).fname = [session_path 'Seq_v_Rand_Block_01/scraurSeq_v_Rand_Block_01.nii'];
+session.SPM.xY.VY(x).fname = [session_path config.relative_paths.svr_block1_nii];
 end
 
 %processed_rois =  cppi_align_roi_to_epi(rois);
@@ -51,7 +51,7 @@ for x=1:length(seeds)
                             seed.searchlight_obj, ...
                             seed.obj);
 
-Vmask = spm_vol([session_path 'SvR_GLM/mask.hdr']);                       
+Vmask = spm_vol([session_path config.relative_paths.svr_mask_hdr]);                       
                         
 [seed_sphere] = cppi_extract_seed_sphere( ...
                             session.seeds(x).seed_xyz, ...

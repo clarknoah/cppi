@@ -1,7 +1,15 @@
 {
   "paths":{
     "subjects_root":"/home/noah/coax_external/patrick_project/subjects/subjects",
-    "freesurfer_root":"/home/noah/coax_external/patrick_project/freesurfer/subjects"
+    "freesurfer_root":"/home/noah/coax_external/patrick_project/freesurfer/subjects",
+    "cppi_root":"/home/noah/Development/cppi",
+    "output_folder":"/home/noah/Development/cppi/data"
+
+  },
+  "relative_paths":{
+    "subject_spm":"SvR_GLM/SPM.mat",
+    "svr_block1_nii":"Seq_v_Rand_Block_01/scraurSeq_v_Rand_Block_01.nii",
+    "svr_mask_hdr":"SvR_GLM/mask.hdr"
   },
   "subjects":[
 			{

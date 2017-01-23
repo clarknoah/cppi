@@ -5,6 +5,7 @@ function [ output_args ] = cppi_coreg_to_epi(reference_image, source_image, roi_
   spm_jobman('initcfg');
   matlabbatch{1}.spm.spatial.coreg.estwrite.ref = {reference_image};
   matlabbatch{1}.spm.spatial.coreg.estwrite.source = {source_image};
+  
   matlabbatch{1}.spm.spatial.coreg.estwrite.other = roi_cells';
   matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.cost_fun = 'nmi';
   matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.sep = [4 2];

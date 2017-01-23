@@ -13,7 +13,7 @@ export FREESURFER_HOME="/usr/local/freesurfer"
 export SUBJECTS_DIR=$COAX_EXT/patrick_project/freesurfer/subjects
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 export SUBJECTS_DIR=$COAX_EXT/patrick_project/freesurfer/subjects
-SUB_LIST="0012 0273 0192 0490 0491 0269 0464 0494 0495 0549 0550 0557 0558 0559 0604 0605 0627"
+SUB_LIST="0006 0012 0273 0192 0490 0491 0269 0464 0494 0495 0549 0550 0557 0558 0559 0604 0605 0627"
 
 #to add PPC
 for subject in 0006

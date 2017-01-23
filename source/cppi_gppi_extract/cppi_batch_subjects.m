@@ -1,4 +1,4 @@
-function [cppi_tools] = cppi_batch_subjects(config,payload)
+function [cppi_tools] = cppi_batch_subjects(config,payload,output_filename)
 %CPPI_BATCH_SUBJECTS Iterates through subjects producting Cppi_Subjects
 % --- ARGUMENTS ---
 %
@@ -61,6 +61,7 @@ function [cppi_tools] = cppi_batch_subjects(config,payload)
     end
     disp('*****************')
     cppi_tools = Cppi_Tools(subjects_array);
+    save([config.paths.output_folder '/' output_filename], 'cppi_tools');
 
 
 end
