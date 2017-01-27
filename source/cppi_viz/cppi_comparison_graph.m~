@@ -36,7 +36,7 @@ xticker = 'M1 - S1';
 bTitle = {'Mean Value of the Post minus Pre ROI Differences','(With SEM)'};
 h = group_error_bar([m1_differences;s1_differences] ...
     ,[m1_sem;s1_sem],xticker,yTicker,lKey,bTitle);
-set(gca,'XTicklabel',{name1,name2})
+set(gca,'XTicklabel',{name1,name})
 h(1).FaceColor = 'g';
 lh = legend(lKey);
 set(lh,'Location','BestOutside','Orientation','horizontal');

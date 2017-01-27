@@ -13,7 +13,7 @@ fields = fieldnames(payload.files);
                 
                 %Determines if o_file has larger priority value
                 if(strcmp(o_file.function,'roi')&& o_file.hemi==true ...
-                        && priority<o_file.overlap_priority)
+                        && priority~=0 && o_file.overlap_priority~=0 && priority<o_file.overlap_priority)
                     %develop function that can determine if there's overlap
                     %before I do big batch func
                     intersectfn =  cppi.parse_session_path('%s/%s%s/rois/lh_temp_overlap.nii', subject,session);

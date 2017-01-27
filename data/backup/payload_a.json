@@ -41,10 +41,10 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 94,
+					"z_coord": 99,
 					"x_coord": 156,
-					"z_max": 114,
-					"z_min": 74,
+					"z_max": 119,
+					"z_min": 79,
 					"x_max": 176,
 					"x_min": 136
 				}
@@ -61,12 +61,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 107,
-					"x_coord": 92,
-					"z_max": 127,
-					"z_min": 87,
-					"x_max": 112,
-					"x_min": 72
+					"z_coord": 95,
+					"x_coord": 95,
+					"z_max": 115,
+					"z_min": 75,
+					"x_max": 115,
+					"x_min": 75
 				}
 			}
 		},
@@ -87,12 +87,12 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 108,
-					"x_coord": 163,
-					"z_max": 128,
-					"z_min": 88,
-					"x_max": 183,
-					"x_min": 143
+					"z_coord": 111,
+					"x_coord": 162,
+					"z_max": 131,
+					"z_min": 91,
+					"x_max": 182,
+					"x_min": 142
 				}
 			},
 			"rh": {
@@ -107,63 +107,63 @@
 				"c_min": null,
 				"c_max": null,
 				"coord": {
-					"z_coord": 112,
-					"x_coord": 96,
-					"z_max": 132,
-					"z_min": 92,
-					"x_max": 116,
-					"x_min": 76
+					"z_coord": 107,
+					"x_coord": 99,
+					"z_max": 127,
+					"z_min": 87,
+					"x_max": 119,
+					"x_min": 79
 				}
 			}
 		},
-		"ba6": {
+		"s1": {
 			"hemi": 1,
 			"function": "roi",
-			"overlap_priority": 0,
+			"overlap_priority": 2,
 			"cropper": 0,
 			"lh": {
-				"name": "Broadmann 6 (lh)",
+				"name": "Primary Somatosensory Cortex (lh)",
 				"obj": null,
-				"filename": "lhBA6.nii",
-				"org_path": "%s\/%s%s\/perm_test\/lhBA6.nii",
-				"current_path": "%s\/%s%s\/rois\/r_lhBA6_cropped.nii",
-				"cropped_path": "%s\/%s%s\/rois\/lhBA6_cropped.nii",
+				"filename": "lhBA123.nii",
+				"org_path": "%s\/%s%s\/perm_test\/lhBA123.nii",
+				"current_path": "%s\/%s%s\/rois\/r_lhBA123_cropped.nii",
+				"cropped_path": "%s\/%s%s\/rois\/lhBA123_cropped.nii",
 				"c_min": null,
 				"c_max": null
 			},
 			"rh": {
-				"name": "Broadmann 6 (rh)",
+				"name": "Primary Somatosensory Cortex (rh)",
 				"obj": null,
-				"filename": "rhBA6.nii",
-				"org_path": "%s\/%s%s\/perm_test\/rhBA6.nii",
-				"current_path": "%s\/%s%s\/rois\/r_rhBA6_cropped.nii",
-				"cropped_path": "%s\/%s%s\/rois\/rhBA6_cropped.nii",
+				"filename": "rhBA123.nii",
+				"org_path": "%s\/%s%s\/perm_test\/rhBA123.nii",
+				"current_path": "%s\/%s%s\/rois\/r_rhBA123_cropped.nii",
+				"cropped_path": "%s\/%s%s\/rois\/rhBA123_cropped.nii",
 				"c_min": null,
 				"c_max": null
 			}
 		},
-		"ba3": {
+		"m1": {
 			"hemi": 1,
 			"function": "roi",
-			"overlap_priority": 0,
+			"overlap_priority": 1,
 			"cropper": 0,
 			"lh": {
-				"name": "Broadmann 3 (lh)",
+				"name": "Primary Motor Cortex (lh)",
 				"obj": null,
-				"filename": "lhBA3.nii",
-				"org_path": "%s\/%s%s\/perm_test\/lhBA3.nii",
-				"current_path": "%s\/%s%s\/rois\/r_lhBA3_cropped.nii",
-				"cropped_path": "%s\/%s%s\/rois\/lhBA3_cropped.nii",
+				"filename": "lhBA4.nii",
+				"org_path": "%s\/%s%s\/perm_test\/lhBA4.nii",
+				"current_path": "%s\/%s%s\/rois\/r_lhBA4_cropped.nii",
+				"cropped_path": "%s\/%s%s\/rois\/lhBA4_cropped.nii",
 				"c_min": null,
 				"c_max": null
 			},
 			"rh": {
-				"name": "Broadmann 3 (rh)",
+				"name": "Primary Motor Cortex (rh)",
 				"obj": null,
-				"filename": "rhBA3.nii",
-				"org_path": "%s\/%s%s\/perm_test\/rhBA3.nii",
-				"current_path": "%s\/%s%s\/rois\/r_rhBA3_cropped.nii",
-				"cropped_path": "%s\/%s%s\/rois\/rhBA3_cropped.nii",
+				"filename": "rhBA4.nii",
+				"org_path": "%s\/%s%s\/perm_test\/rhBA4.nii",
+				"current_path": "%s\/%s%s\/rois\/r_rhBA4_cropped.nii",
+				"cropped_path": "%s\/%s%s\/rois\/rhBA4_cropped.nii",
 				"c_min": null,
 				"c_max": null
 			}

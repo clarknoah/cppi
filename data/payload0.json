@@ -1,0 +1,149 @@
+{
+  "paths":{
+    "subjects_root":"/home/noah/coax_external/patrick_project/subjects/subjects",
+    "freesurfer_root":"/home/noah/coax_external/patrick_project/freesurfer/subjects",
+    "output_folder":"/home/noah/Development/cppi/data",
+    "payload_path":"/home/noah/Development/cppi/data"
+  },
+  "files":{
+    "brain":{
+      "hemi":false,
+      "function":"source",
+      "filename":"brain.nii",
+      "cropper":false,
+      "org_path":"%s/%s%s/perm_test/brain.nii",
+      "current_path":"%s/%s%s/perm_test/brain.nii"
+    },
+    "aurRER_Run1_01":{
+      "hemi":false,
+      "function":"source",
+      "filename":"aurRER_Run1_01.nii",
+      "org_path":"%s/%s%s/perm_test/aurRER_Run1_01.nii",
+      "current_path":"%s/%s%s/perm_test/aurRER_Run1_01.nii",
+      "cropper":false
+    },
+    "mfg_crest":{
+      "hemi":true,
+      "function":"seed",
+      "overlap_priority":null,
+      "cropper":false,
+
+      "lh":{
+        "obj":null,
+        "searchlight_obj":null,
+        "name":"MFG Crest (lh)",
+        "filename":"mfg_crest_lh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
+        "org_path":"%s/%s%s/perm_test/mfg_crest_lh.nii",
+        "current_path":"%s/%s%s/perm_test/mfg_crest_lh.nii",
+        "cropped_path":"%s/%s%s/rois/mfg_crest_lh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "obj":null,
+        "searchlight_obj":null,
+        "name":"MFG Crest (rh)",
+        "filename":"mfg_crest_rh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
+        "org_path":"%s/%s%s/perm_test/mfg_crest_rh.nii",
+        "current_path":"%s/%s%s/perm_test/mfg_crest_rh.nii",
+        "cropped_path":"%s/%s%s/rois/mfg_crest_rh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    },
+    "hand_knob":{
+      "hemi":true,
+      "cropper":true,
+      "function":"seed",
+      "overlap_priority":null,
+
+      "lh":{
+        "obj":null,
+        "searchlight_obj":null,
+        "name":"Hand Knob (lh)",
+        "filename":"hand_knob_lh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
+        "org_path":"%s/%s%s/perm_test/hand_knob_lh.nii",
+        "current_path":"%s/%s%s/perm_test/hand_knob_lh.nii",
+        "cropped_path":"%s/%s%s/rois/hand_knob_lh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "obj":null,
+        "searchlight_obj":null,
+        "name":"Hand Knob (rh)",
+        "filename":"hand_knob_rh.nii",
+        "org_path":"%s/%s%s/perm_test/hand_knob_rh.nii",
+        "searchlight_path":"%s/%s%s/perm_test/perm_searchlight_output_H_pre.img",
+        "current_path":"%s/%s%s/perm_test/hand_knob_rh.nii",
+        "cropped_path":"%s/%s%s/rois/hand_knob_rh_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    },
+
+    "ba6":{
+      "hemi":true,
+      "function":"roi",
+      "overlap_priority":0,
+      "cropper":false,
+
+      "lh":{
+        "name":"Broadmann 6 (lh)",
+        "obj":null,
+        "filename":"lhBA6.nii",
+        "org_path":"%s/%s%s/perm_test/lhBA6.nii",
+        "current_path":"%s/%s%s/perm_test/lhBA6.nii",
+        "cropped_path":"%s/%s%s/rois/lhBA6_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "name":"Broadmann 6 (rh)",
+        "obj":null,
+        "filename":"rhBA6.nii",
+        "org_path":"%s/%s%s/perm_test/rhBA6.nii",
+        "current_path":"%s/%s%s/perm_test/rhBA6.nii",
+        "cropped_path":"%s/%s%s/rois/rhBA6_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    },
+    "ba3":{
+      "hemi":true,
+      "function":"roi",
+      "overlap_priority":0,
+      "cropper":false,
+
+      "lh":{
+        "name":"Broadmann 3 (lh)",
+        "obj":null,
+        "filename":"lhBA3.nii",
+        "org_path":"%s/%s%s/perm_test/lhBA3.nii",
+        "current_path":"%s/%s%s/perm_test/lhBA3.nii",
+        "cropped_path":"%s/%s%s/rois/lhBA3_cropped.nii",
+        "c_min":null,
+        "c_max":null
+
+      },
+      "rh":{
+        "name":"Broadmann 3 (rh)",
+        "obj":null,
+        "filename":"rhBA3.nii",
+        "org_path":"%s/%s%s/perm_test/rhBA3.nii",
+        "current_path":"%s/%s%s/perm_test/rhBA3.nii",
+        "cropped_path":"%s/%s%s/rois/rhBA3_cropped.nii",
+        "c_min":null,
+        "c_max":null
+      }
+    }
+
+
+  }
+}
