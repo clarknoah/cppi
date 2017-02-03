@@ -18,19 +18,13 @@ for roi=1:length(session.rois)
         session.rois(roi).seeds(x).name = session.seeds(x).name;
         session.rois(roi).seeds(x).betas = struct('random',struct(),'sequence',struct());
  %{ 
-    #TEST-START This code has been injected to evaluate if beta values are
+    #TEST This code has been injected to evaluate if beta values are
     correct
         
- %} 
+ %}
+          seed = [session.seeds(x).seeds_timeseries
+        betas = cppi_extract_betas(session.seeds(x).ppi_design, session.rois(roi).timeseries);
         
-        seed = session.seeds(x).seeds_timeseries;
-        seed = [seed seed seed seed seed];
-        betas = cppi_extract_betas(session.seeds(x).ppi_design, seed);
- %{ 
-    #TEST-END This code has been injected to evaluate if beta values are
-    correct
-        
- %} 
        % betas = cppi_extract_betas(session.seeds(x).ppi_design, session.rois(roi).timeseries);
         
         session.rois(roi).seeds(x).betas.raw =  betas;

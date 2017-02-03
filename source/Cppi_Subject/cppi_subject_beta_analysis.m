@@ -9,7 +9,7 @@ for roi=1:length(pre_session.rois)
         beta_differences.roi = pre_session.rois(roi).name;
         beta_differences.seed = pre_session.rois(roi).seeds(x).name;
         beta.differences.random = struct();
-        beta.differeneces.sequence = struct();
+        beta.differences.sequence = struct();
         beta_differences.name = [pre_session.rois(roi).name ...
            ' with ' pre_session.rois(roi).seeds(x).name ' seed'];
 

@@ -1,4 +1,4 @@
-function [session,payload] = cppi_extract_session_features(session_path,subs_dir,subject_name,config,payload,session_point,process_data)
+function [session,payload] = cppi_extract_session_features(session_path,subs_dir,subject_name,config,payload,session_point,processor)
 %CPPI_EXTRACT_SESSION_FEATURES Gets data for Cppi_Subject
 %   This function accepts the root path of a subject's folder and uses that
 %   to extract that various data points required for the Cppi_Subject
@@ -25,15 +25,14 @@ end
     %Pipeline evaluates if it has received the first or second session, if
     %the session is the first one, then it will go through the
     %cppi_align_labels function in order to determine whether or 
-if(strcmp(session_point,'_1') && process_data==1)
+if(strcmp(session_point,'_1') && process)
     
     cppi = cppi_align_labels(config,payload,subject_name,session_point);
-    payload = cppi.payload;
-    processed_rois = cppi.retrieve_rois(subject_name,session_point);
     
-elseif(strcmp(session_point,'_1') && process_data==0)
-    payload = loadjson([config.paths.output_folder '/payload_a.json']);
-    cppi = Cppi_Manipulator(config,payload);    
+    payload = cppi.payload;
+    %payload = loadjson('/home/noah/Development/cppi/data/payload_a.json');
+    %cppi = Cppi_Manipulator(config,payload);
+    
     processed_rois = cppi.retrieve_rois(subject_name,session_point);
 else
     cppi = Cppi_Manipulator(config,payload);

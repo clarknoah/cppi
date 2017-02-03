@@ -63,17 +63,12 @@ classdef Cppi_Tools
         r1 = obj.extract_roi_mean_betas(roi1,seed);
         r2 = obj.extract_roi_mean_betas(roi2,seed);
         
-  %      betas = [r1.trg_seq(1),r1.ctrl_seq(1);r1.trg_ran(1),r1.ctrl_ran(1); ...
-  %          r2.trg_seq(1),r2.ctrl_seq(1);r2.trg_ran(1),r2.ctrl_ran(1)];
+        betas = [r1.trg_seq(1),r1.ctrl_seq(1);r1.trg_ran(1),r1.ctrl_ran(1); ...
+            r2.trg_seq(1),r2.ctrl_seq(1);r2.trg_ran(1),r2.ctrl_ran(1)];
         
-  %      sem=[r1.trg_seq(2),r1.ctrl_seq(2);r1.trg_ran(2),r1.ctrl_ran(2); ...
-  %         r2.trg_seq(2),r2.ctrl_seq(2);r2.trg_ran(2),r2.ctrl_ran(2)];
-   
-        betas = [r1.trg_seq(1),r2.trg_seq(1);r1.ctrl_seq(1),r2.ctrl_seq(1); ...
-            r1.trg_ran(1),r2.trg_ran(1);r1.ctrl_ran(1),r2.ctrl_ran(1)];
-        
-        sem=[r1.trg_seq(2),r2.trg_seq(2);r1.ctrl_seq(2),r2.ctrl_seq(2); ...
-            r1.trg_ran(2),r2.trg_ran(2);r1.ctrl_ran(2),r2.ctrl_ran(2)];
+        sem=[r1.trg_seq(2),r1.ctrl_seq(2);r1.trg_ran(2),r1.ctrl_ran(2); ...
+           r2.trg_seq(2),r2.ctrl_seq(2);r2.trg_ran(2),r2.ctrl_ran(2)];
+               
         
         end
     end

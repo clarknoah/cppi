@@ -9,7 +9,8 @@ xTicker = {'Training Group - Sequence Condition',...
     'Control Group - Sequence Condition',...
     'Training Group - Random Condition'...
     'Control Group - Random Condition'};
-yTicker = 'Mean Beta Value';
+%yTicker = 'Mean Beta Value';
+yTicker = 'Connectivity';
 
 figure;
 subplot(1,2,1);
