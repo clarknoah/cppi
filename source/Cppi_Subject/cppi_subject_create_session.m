@@ -27,11 +27,13 @@ for roi=1:length(session.rois)
         seed = [seed seed seed seed seed];
         betas = cppi_extract_betas(session.seeds(x).ppi_design, seed);
  %{ 
-    #TEST-END This code has been injected to evaluate if beta values are
-    correct
+    #TEST-END 
+        
+        (Original Code that will be placed back)
+         % betas = cppi_extract_betas(session.seeds(x).ppi_design, session.rois(roi).timeseries);
         
  %} 
-       % betas = cppi_extract_betas(session.seeds(x).ppi_design, session.rois(roi).timeseries);
+      
         
         session.rois(roi).seeds(x).betas.raw =  betas;
         session.rois(roi).seeds(x).betas.random.raw = betas(1,:);

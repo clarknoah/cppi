@@ -76,6 +76,19 @@ classdef Cppi_Tools
             r1.trg_ran(2),r2.trg_ran(2);r1.ctrl_ran(2),r2.ctrl_ran(2)];
         
         end
+        
+        %TEST-EVAL FUNCTIONS
+        function [t] = eval_beta_differences(obj,sub,roi,seed,task)
+            Post_Mean_Beta = obj.subjects(sub).post.rois(roi).seeds(seed).betas.(task).mean;
+            Pre_Mean_Beta = obj.subjects(sub).pre.rois(roi).seeds(seed).betas.(task).mean;
+            Difference = Post_Mean_Beta-Pre_Mean_Beta;
+            Seed = obj.subjects(sub).post.rois(roi).seeds(seed).name;
+            Roi = {obj.subjects(sub).post.rois(roi).seeds(seed).name};
+            Subjects = {obj.subjects(sub).names};
+
+           t = table(Post_Mean_Beta,Pre_Mean_Beta,Difference,Seed,Roi, ...
+               'RowNames',Subjects);
+        end
     end
 
 end
