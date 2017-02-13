@@ -6,6 +6,8 @@ function [ppi_design] = cppi_extract_ppi_design(task_design,seed_eigen_vector)
 %
     ppi_random = task_design(:,1).*seed_eigen_vector;
     ppi_sequence = task_design(:,2).*seed_eigen_vector;
+    
+    %task_design is 9xN matrix
     task_design(:,1) = ppi_random;
     task_design(:,2) = ppi_sequence;
     ppi_design = task_design;

@@ -79,14 +79,27 @@ classdef Cppi_Tools
         
         %TEST-EVAL FUNCTIONS
         function [t] = eval_beta_differences(obj,sub,roi,seed,task)
-            Post_Mean_Beta = obj.subjects(sub).post.rois(roi).seeds(seed).betas.(task).mean;
-            Pre_Mean_Beta = obj.subjects(sub).pre.rois(roi).seeds(seed).betas.(task).mean;
+            Post_Mean_Beta = [];
+            Pre_Mean_Beta = [];
+            temp_subjects = obj.subjects(sub);
+            for x=1:length(temp_subjects)
+                Post_Mean_Beta = [Post_Mean_Beta; temp_subjects(x).post.rois(roi).seeds(seed).betas.(task).mean];
+                Pre_Mean_Beta = [Pre_Mean_Beta; temp_subjects(x).pre.rois(roi).seeds(seed).betas.(task).mean];
+            end
             Difference = Post_Mean_Beta-Pre_Mean_Beta;
-            Seed = obj.subjects(sub).post.rois(roi).seeds(seed).name;
-            Roi = {obj.subjects(sub).post.rois(roi).seeds(seed).name};
-            Subjects = {obj.subjects(sub).names};
-
-           t = table(Post_Mean_Beta,Pre_Mean_Beta,Difference,Seed,Roi, ...
+            Seed = cell(length(temp_subjects),1);
+            Seed(:) = {obj.subjects(sub(1)).post.rois(roi).seeds(seed).name};
+            Roi = cell(length(temp_subjects),1);
+            Roi(:) = {obj.subjects(sub(1)).post.rois(roi).name};
+            Subjects = {obj.subjects(sub).name}.';
+            Group = {obj.subjects(sub).group}.';
+            disp(length(Post_Mean_Beta));
+            disp(length(Pre_Mean_Beta));
+            disp(length(Roi));
+            disp(length(Seed));
+            disp(length(Difference));
+            disp(length(Subjects));
+           t = table(Post_Mean_Beta,Pre_Mean_Beta,Difference,Seed,Roi,Group,...
                'RowNames',Subjects);
         end
     end
